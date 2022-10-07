@@ -14,11 +14,11 @@ public class Ej10 {
 
         //Inicialización de variables
 
-        a = 10;
+        a = Double.parseDouble(JOptionPane.showInputDialog("Introduce la medida A: "));
 
-        b = 5;
+        b = Double.parseDouble(JOptionPane.showInputDialog("Introduce la medida B: "));
 
-        c = 3;
+        c = Double.parseDouble(JOptionPane.showInputDialog("Introduce la medida C: "));
 
         //Cálculos
 

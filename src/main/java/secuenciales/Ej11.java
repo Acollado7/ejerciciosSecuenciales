@@ -1,27 +1,29 @@
 package secuenciales;
 
+import javax.swing.*;
+
 public class Ej11 {
     public static void main(String[] args) {
         //Se requiere obtener el área de la figura, a partir de R y H.
         // Realiza un algoritmo para resolver el problema.
-
+        //lo mostramos por JOptionPane
         //Declaración de variables
 
-        double r, h, area;
+        double radio, altura, area;
 
-        //Inicialización de variables
+        //Entrada de datos
 
-        r = 10;
+        radio = Double.parseDouble(JOptionPane.showInputDialog("Introduce el radio de la circunferencia: "));
 
-        h = 20;
+        altura = Double.parseDouble(JOptionPane.showInputDialog("Introduce la altura de la circunferencia: "));
 
-        //Cálculos
+        //Proceso
 
-        area = Math.PI * Math.pow(r, 2) * h;
+        area = Math.PI * Math.pow(radio, 2) * altura;
 
-        //Mostrar resultados
+        //Salida
 
-        System.out.println("El área de la figura es: " + Math.round(area) + " m2");
+        JOptionPane.showMessageDialog(null, "El área de la figura es: " + area);
 
 
     }
